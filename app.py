@@ -46,31 +46,19 @@ st.markdown(
 st.markdown("<h2 style='text-align: center;'>Aplikasi Prediksi Penyakit Diabetes Menggunakan Algoritma Support Vector Machine (SVM)</h2>",
             unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
+#bagi kolom
+col1,col2 = st.columns(2)
 
 with col1 :
-    Pregnancies = st.text_input('Input Nilai Pregnancies')
-
+    Pregnancies = st.text_input ('Input nilai Pregnancies')
+    Glucose = st.text_input ('Input nilai Glucose')
+    BloodPressure = st.text_input ('Input nilai BloodPressure')
+    SkinThickness = st.text_input ('Input nilai SkinThickness')
 with col2 :
-    Glucose = st.text_input('Input Nilai Glucose')
-    
-with col1 :
-    BloodPressure = st.text_input('Input Nilai BloodPressure')
-
-with col2 :
-    SkinThickness = st.text_input('Input Nilai SkinThickness')
-
-with col1 :
-    Insulin = st.text_input('Input Nilai Insulin')
-
-with col2 :
-    BMI = st.text_input('Input Nilai BMI')
-
-with col1 :
-    DiabetesPedigreeFunction = st.text_input('Input Nilai DiabetesPedigreeFunction')
-
-with col2 :
-    Age = st.text_input('Input Nilai Age')
+    Insulin = st.text_input ('Input nilai pregnancies')
+    BMI = st.text_input ('Input nilai Insulin')
+    DiabetesPedigreeFunction =st.text_input('Input nilai diabetes Pedigree function')
+    Age = st.text_input('Input nilai Age')
 
 #code prediksi
 diab_diagnosis = ''
